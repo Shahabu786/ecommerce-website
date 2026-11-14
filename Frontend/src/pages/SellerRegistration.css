@@ -1,0 +1,262 @@
+/* TechNest Seller Registration — designed to match the site's navy/blue theme */
+.seller-register-page {
+  min-height: 100vh;
+  padding: 34px 22px;
+  color: #172033;
+  background:
+    radial-gradient(ellipse at 5% 8%, rgba(96, 165, 250, .14), transparent 32%),
+    radial-gradient(ellipse at 96% 92%, rgba(37, 99, 235, .10), transparent 34%),
+    #eef3fa;
+}
+.seller-register-shell {
+  width: min(1320px, 100%);
+  min-height: 850px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(340px, .82fr) minmax(0, 1.38fr);
+  overflow: hidden;
+  border: 1px solid rgba(203, 213, 225, .85);
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 28px 90px rgba(7, 20, 38, .13);
+}
+.seller-visual-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 36px 34px 24px;
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(circle at 75% 47%, rgba(37, 99, 235, .28), transparent 34%),
+    linear-gradient(145deg, #071426 0%, #0b1f3a 58%, #12345d 100%);
+}
+.seller-page-brand {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  width: fit-content;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -.8px;
+  text-decoration: none;
+}
+.seller-page-brand span { color: #60a5fa; }
+.seller-visual-copy { position: relative; z-index: 2; margin-top: 65px; }
+.seller-visual-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 11px;
+  border: 1px solid rgba(147, 197, 253, .25);
+  border-radius: 30px;
+  color: #bfdbfe;
+  background: rgba(96, 165, 250, .09);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+.seller-visual-tag i {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #60a5fa; box-shadow: 0 0 12px #60a5fa;
+}
+.seller-visual-copy h1 {
+  margin: 21px 0 14px;
+  color: #fff;
+  font-size: clamp(32px, 3vw, 45px);
+  line-height: 1.12;
+  letter-spacing: -1.8px;
+}
+.seller-visual-copy h1 em {
+  color: #60a5fa;
+  font-family: Georgia, serif;
+  font-weight: 500;
+}
+.seller-visual-copy p {
+  max-width: 370px;
+  color: #b8c6d9;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.seller-art-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-height: 285px;
+  margin: 8px -24px 0;
+}
+.seller-watermark {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  color: rgba(147, 197, 253, .075);
+  font-size: clamp(48px, 6vw, 88px);
+  font-weight: 900;
+  letter-spacing: -5px;
+  white-space: nowrap;
+  user-select: none;
+  text-shadow: 0 12px 45px rgba(96, 165, 250, .10);
+}
+.seller-illustration {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 440px);
+  max-height: 360px;
+  filter: drop-shadow(0 22px 28px rgba(0, 0, 0, .15));
+}
+.seller-visual-points {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  position: relative;
+  z-index: 2;
+  margin-top: 10px;
+}
+.seller-visual-points > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 10px;
+  border: 1px solid rgba(255, 255, 255, .10);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .045);
+}
+.seller-point-icon {
+  display: grid; place-items: center;
+  flex: 0 0 34px; height: 34px;
+  border-radius: 10px;
+  color: #93c5fd; background: rgba(96, 165, 250, .13);
+  font-size: 19px; font-weight: 800;
+}
+.seller-visual-points p { display: flex; flex-direction: column; gap: 4px; }
+.seller-visual-points strong { color: #f8fafc; font-size: 11px; }
+.seller-visual-points small { color: #94a3b8; font-size: 9px; line-height: 1.4; }
+.seller-panel-footer {
+  display: flex; justify-content: space-between;
+  margin-top: 23px; padding-top: 17px;
+  border-top: 1px solid rgba(255, 255, 255, .10);
+  color: #8da2bd; font-size: 10px;
+}
+.seller-panel-footer span { color: #60a5fa; font-size: 17px; }
+
+.seller-form-panel { min-width: 0; padding: 42px clamp(24px, 4vw, 58px) 34px; }
+.seller-mobile-brand { display: none; }
+.seller-form-heading { padding-bottom: 25px; border-bottom: 1px solid #edf1f7; }
+.seller-step-label {
+  display: flex; align-items: center; gap: 10px;
+  color: #2563eb; font-size: 10px; font-weight: 800; letter-spacing: 1.6px;
+}
+.seller-step-label span {
+  display: grid; place-items: center;
+  width: 29px; height: 29px; border-radius: 9px;
+  color: #2563eb; background: #eff6ff; letter-spacing: 0;
+}
+.seller-form-heading h2 {
+  margin: 18px 0 8px; color: #0b1f3a;
+  font-size: clamp(25px, 2.6vw, 34px); line-height: 1.18; letter-spacing: -1px;
+}
+.seller-form-heading > p { color: #64748b; font-size: 13px; line-height: 1.6; }
+.seller-progress { height: 5px; margin-top: 22px; overflow: hidden; border-radius: 10px; background: #eaf0f8; }
+.seller-progress span { display: block; width: 43%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #2563eb, #60a5fa); }
+.seller-progress-caption { display: block; margin-top: 8px; color: #8a97aa; font-size: 10px; }
+.seller-progress-caption b { padding: 0 5px; color: #c0ccdc; }
+.seller-registration-form { padding-top: 25px; }
+.seller-section-heading { display: flex; align-items: center; gap: 12px; margin: 0 0 14px; }
+.seller-section-icon {
+  display: grid; place-items: center; flex: 0 0 37px; height: 37px;
+  border: 1px solid #dbeafe; border-radius: 11px;
+  background: #eff6ff; color: #2563eb; font-size: 11px; font-weight: 800;
+}
+.seller-section-heading h3 { color: #10233f; font-size: 15px; font-weight: 750; }
+.seller-section-heading p { margin-top: 4px; color: #8995a7; font-size: 11px; }
+.seller-fields-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 16px; }
+.seller-fields-grid label {
+  display: flex; flex-direction: column; gap: 7px; min-width: 0;
+  margin: 0; color: #26364d; font-size: 11px; font-weight: 750;
+}
+.seller-fields-grid label sup { display: inline; color: #2563eb; font-size: 12px; }
+.seller-fields-grid input, .seller-fields-grid textarea {
+  display: block; width: 100%; min-width: 0; min-height: 44px;
+  padding: 11px 13px; border: 1px solid #d8e1ee; border-radius: 9px;
+  outline: none; background: #fbfdff; color: #172033;
+  font: 500 12px Inter, Arial, sans-serif;
+  transition: border-color .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.seller-fields-grid input::placeholder, .seller-fields-grid textarea::placeholder { color: #9aa7b8; font-weight: 400; }
+.seller-fields-grid input:focus, .seller-fields-grid textarea:focus {
+  border-color: #60a5fa; background: #fff; box-shadow: 0 0 0 3px rgba(37, 99, 235, .10);
+}
+.seller-fields-grid textarea { min-height: 85px; resize: vertical; line-height: 1.5; }
+.seller-optional { color: #8995a7; font-size: 10px; font-weight: 500; }
+.seller-bank-heading { margin-top: 28px; }
+.seller-secure-note { margin-left: auto; color: #16804a; font-size: 10px; white-space: nowrap; }
+.seller-full-field { grid-column: 1 / -1; }
+.seller-consent {
+  display: flex; align-items: flex-start; gap: 10px;
+  margin-top: 22px; color: #68778b; font-size: 10px; font-weight: 450; line-height: 1.65;
+}
+.seller-consent input { flex: 0 0 auto; width: 15px; height: 15px; margin-top: 1px; accent-color: #2563eb; }
+.seller-submit-btn {
+  display: flex; justify-content: space-between; align-items: center;
+  width: 100%; margin-top: 20px; padding: 14px 17px;
+  border: 0; border-radius: 10px; color: #fff;
+  background: linear-gradient(100deg, #2563eb, #1d4ed8);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, .22);
+  font-size: 12px; font-weight: 750; cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.seller-submit-btn span { font-size: 20px; line-height: 12px; }
+.seller-submit-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(37, 99, 235, .28); }
+.seller-privacy-note { display: flex; align-items: flex-start; gap: 7px; margin-top: 14px; color: #8a97a9; font-size: 10px; line-height: 1.6; }
+.seller-privacy-note span { flex-shrink: 0; }
+.seller-success-card {
+  width: min(520px, 100%); margin: auto; padding: 42px;
+  border: 1px solid #dbe5f2; border-radius: 22px; background: #fff;
+  text-align: center; box-shadow: 0 24px 70px rgba(7, 20, 38, .12);
+}
+.seller-success-icon {
+  display: grid; place-items: center; width: 64px; height: 64px; margin: 0 auto 20px;
+  border-radius: 50%; background: #dcfce7; color: #15803d; font-size: 34px;
+}
+.seller-eyebrow { color: #2563eb; font-size: 10px; font-weight: 800; letter-spacing: 1.6px; }
+.seller-success-card h1 { margin: 12px 0; color: #0b1f3a; font-size: 30px; }
+.seller-success-card > p:not(.seller-eyebrow) { color: #64748b; font-size: 13px; line-height: 1.7; }
+.seller-success-actions { display: flex; gap: 10px; margin-top: 24px; }
+.seller-primary-btn, .seller-outline-btn {
+  display: inline-flex; align-items: center; justify-content: center; flex: 1;
+  min-height: 44px; padding: 10px 14px; border-radius: 9px; font-size: 12px; font-weight: 700; text-decoration: none; cursor: pointer;
+}
+.seller-primary-btn { border: 0; color: white; background: #2563eb; }
+.seller-outline-btn { border: 1px solid #dbe3ee; color: #172033; background: #fff; }
+
+@media (max-width: 1000px) {
+  .seller-register-shell { grid-template-columns: minmax(290px, .75fr) minmax(0, 1.25fr); }
+  .seller-visual-panel { padding: 30px 24px 22px; }
+  .seller-form-panel { padding: 34px 28px; }
+  .seller-visual-points { grid-template-columns: 1fr; }
+  .seller-visual-copy { margin-top: 48px; }
+}
+@media (max-width: 760px) {
+  .seller-register-page { padding: 14px; }
+  .seller-register-shell { grid-template-columns: 1fr; border-radius: 18px; }
+  .seller-visual-panel { display: none; }
+  .seller-form-panel { padding: 24px 20px; }
+  .seller-mobile-brand { display: block; margin-bottom: 25px; }
+  .seller-mobile-brand .seller-page-brand { color: #0b1f3a; }
+  .seller-form-heading h2 { font-size: 27px; }
+}
+@media (max-width: 480px) {
+  .seller-register-page { padding: 0; background: #fff; }
+  .seller-register-shell { border: 0; border-radius: 0; box-shadow: none; }
+  .seller-form-panel { padding: 22px 17px 28px; }
+  .seller-fields-grid { grid-template-columns: 1fr; gap: 13px; }
+  .seller-full-field { grid-column: auto; }
+  .seller-bank-heading { flex-wrap: wrap; }
+  .seller-secure-note { width: 100%; margin-left: 49px; }
+  .seller-success-card { padding: 30px 20px; border-radius: 0; box-shadow: none; }
+  .seller-success-actions { flex-direction: column; }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#e2e8f0"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#cbd5e1"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#334155"/><stop offset="1" stop-color="#0f172a"/></linearGradient>
+<linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="0.5" stop-color="#2563eb"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity=".25"/></filter></defs>
+<rect width="400" height="400" fill="url(#bg)"/><ellipse cx="200" cy="350" rx="130" ry="12" fill="#0f172a" opacity=".12"/>
+<g filter="url(#sh)"><rect x="95" y="75" width="210" height="140" rx="10" fill="url(#metal)" stroke="#94a3b8" stroke-width="2"/>
+<rect x="105" y="85" width="190" height="120" rx="4" fill="url(#screen)"/><path d="M105 205L190 85h50L295 160v45z" fill="#fff" opacity=".07"/>
+<text x="200" y="152" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="20" fill="#fff">MacBook Air</text><path d="M60 220h280l-14 28a10 10 0 0 1-9 6H83a10 10 0 0 1-9-6z" fill="url(#metal)" stroke="#94a3b8" stroke-width="2"/>
+<rect x="170" y="224" width="60" height="6" rx="3" fill="#94a3b8"/></g></svg>
